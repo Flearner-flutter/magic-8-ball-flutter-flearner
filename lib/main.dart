@@ -18,12 +18,14 @@ class BallPage extends StatelessWidget {
         backgroundColor: Colors.blue.shade900,
         title: const Text('Ask Me Anything'),
       ),
-      body: Ball(),
+      body: const Ball(),
     );
   }
 }
 
 class Ball extends StatefulWidget {
+  const Ball({Key? key}) : super(key: key);
+
   @override
   _BallState createState() => _BallState();
 }
